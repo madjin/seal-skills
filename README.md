@@ -13,9 +13,9 @@ Security knowledge graph for AI agents. 27 domains, 111 certification controls, 
 
 ## What this does
 
-Gives your AI agent (Hermes, Claude, Cursor, etc.) structured security knowledge across 27 domains — from incident response and multisig operations to DPRK worker detection and supply chain security.
+Gives your AI agent (Hermes, Claude, Cursor, etc.) structured Web3/blockchain security knowledge across 27 domains — from incident response and multisig operations to DPRK worker detection and supply chain security.
 
-**Not a PDF.** Not a static checklist. Interactive guidance with gotchas, cross-domain awareness, and context-specific answers.
+**Pure security focus.** Not a general-purpose skill collection. Exclusively SEAL security domains from Security Alliance frameworks.
 
 ## Quick Start
 
@@ -48,6 +48,24 @@ hermes chat --toolsets skills -q "What seal skills do you have?"
 - "daily security tips" (sets up coach with daily lessons)
 
 The agent matches your question to the right domain and answers using the SEAL frameworks.
+
+## Skill Types
+
+SEAL skills come in two complementary formats:
+
+### Root Skills (Comprehensive)
+- **Location:** `/<domain>/` (e.g., `/wallet-security/`)
+- **Purpose:** Deep framework knowledge, certification study, incident analysis
+- **Best for:** Security teams building programs, understanding the "why" behind practices
+- **Characteristics:** 10-50+ reference files, extensive cross-domain links, gotchas from real incidents
+
+### Advisor Skills (Concise)
+- **Location:** `/advisors/<domain>-advisor/` (e.g., `/advisors/wallet-security-advisor/`)
+- **Purpose:** Quick guidance, actionable checklists, chatroom support
+- **Best for:** Rapid triage decisions, community support bots, "what to do now" answers
+- **Characteristics:** 2-4 focused reference files, checklists, red flag lists
+
+**Example workflow:** Use advisor for quick triage ("Is this wallet setup secure?"), then dive into root skill for deep understanding ("Why do we need hardware wallets?"), then return to advisor for next steps.
 
 ## Domains (27)
 
